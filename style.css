@@ -6,6 +6,38 @@ body{
     color: white;
     font-family: sans-serif;
 }
+header{
+    background-image: linear-gradient(#050b17, #0f1d37);
+    color: white;
+    padding: 10px;
+    margin-bottom: -1px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+header nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+header p{
+    text-align: center;
+    font-size: 70px;
+    margin: 0px;
+}
+header a{
+    margin: 0px 30px;
+    color: white;
+}
+@media screen and (max-width: 592px){
+    header a{
+        margin: 0px 10px;
+    }
+}
 p, h1, h2, h3, h4{
     padding: 10px 20px;
     line-height: 1.5;
@@ -19,17 +51,18 @@ span{
     padding: 5px 10px;
 }
 .color0-section{
-    background-image: linear-gradient(#1f345d);
-    padding: 20px;
+    background-image: linear-gradient(#0f1d37, #1f345d);
+    padding: 40px 20px 60px 20px;
 }
 .color1-section{
     padding-top: 20px;
     margin-top: -1px;
     background-image: linear-gradient(#1f345d, #625eab);
+    padding: 20px 20px 100px 20px;
 }
 .color1-color2-transition{
-    height: 200px;
-    margin-top: -20px;
+    height: 300px;
+    margin-top: -1px;
     background-image: linear-gradient(#625eab, #ddb3e3 30%, #ddb3e3 70%, #c875af);
 }
 #footer-img img{
