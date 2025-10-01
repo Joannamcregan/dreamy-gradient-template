@@ -41,6 +41,7 @@ header a{
 p, h1, h2, h3, h4{
     padding: 10px 20px;
     line-height: 1.5;
+    margin-top: 0px;
 }
 h1, h2, h3, h4{
     text-align: center;
@@ -88,8 +89,35 @@ ul{
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     padding: 5px 10px;
 }
+.color2-color3-transition{
+    background: #e14264;
+    height: 50px;
+    margin-top: -1px;
+    position: relative;
+}
+.glowing-curve{
+    box-shadow: 0px -9px 10px #173058, 0px -10px 10px #0b53a7;
+}
+.left-curve{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #173058;
+    height: 50px;
+    width: 70%;
+    border-radius: 50% 50% 0% 0%;
+}
+.right-curve{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: #173058;
+    height: 50px;
+    width: 40%;
+    border-radius: 50% 50% 0% 0%;
+}
 .color3-section{
-    background-image: linear-gradient(#1b3b70, #0b53a7);
+    background-image: linear-gradient(#173058, #0b53a7);
     height: fit-content;
     margin-top: -1px;
 }
