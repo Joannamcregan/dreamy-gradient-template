@@ -84,7 +84,6 @@ span{
     margin-top: -1px;
     background-image: linear-gradient(#1f345d, #625eab);
     padding: 20px 20px 100px 20px;
-    display: none;
 }
 .color1-color2-transition{
     width: 100%;
@@ -92,71 +91,70 @@ span{
     margin-top: -1px;
     background-image: linear-gradient(#625eab, #ddb3e3 30%, #e3b3d5 70%, #c8758a);
     position: relative;
-    display: none;
 }
 #left-cloud{
     position: absolute;
     top: 40px;
     left: 0px;
-    background: #6a3f76;
+    background: #cba0d7;
     border-radius: 0% 50% 50% 0%;
     padding: 20px 15px;
     min-width: 240px;
     width: 80%;
     height: 30px;
-    box-shadow: 0px -10px 10px #6a3f76, 10px 0px 10px #6a3f76,  0px 5px 5px #6a3f76, -10px 10px 10px #6a3f76, 0px 10px 20px #884d91, 0px 10px 10px #884d91;
+    box-shadow: 0px -10px 10px #cba0d7, 10px 0px 10px #cba0d7,  0px 5px 5px #cba0d7, -10px 10px 10px #cba0d7, 0px 10px 20px #cba0d7, 0px 10px 10px #cba0d7, 10px 0px 10px #cba0d7;
 }
 #left-cloud::before{
     min-width: 100px;
     width: 40%;
     height: 50px;
-    background: #6a3f76;
+    background: #cba0d7;
     border-radius: 0% 50% 50% 0%;
     display: block;
     position: absolute;
     top: -20px;
     left: 0px;
     content: '';
-    box-shadow: 0px -10px 10px #6a3f76, 10px 0px 10px #6a3f76, 0px 10px 10px #6a3f76;
+    box-shadow: 0px -10px 10px #cba0d7, 10px 0px 10px #cba0d7, 0px 10px 10px #cba0d7, 10px 0px 10px #cba0d7;
 }
 #right-cloud{
     min-width: 200px;
-    width: 50%;
+    width: 70%;
     height: 40px;
-    background: #533d79;
+    background: #e4a7b4;
     border-radius: 50% 0% 0% 50%;
     padding: 20px 15px;
     display: block;
     position: absolute;
     bottom: 40px;
     right: 0px;
-    box-shadow: 0px -10px 10px #533d79, 10px 0px 10px #533d79, 0px 10px 10px #533d79;
+    box-shadow: -10px -10px 10px #e4a7b4, 10px 0px 10px #e4a7b4, -10px 10px 10px #e4a7b4, -10px 10px 10px #e4a7b4, -10px 0px 10px #e4a7b4;
 }
 #right-cloud::before{
     min-width: 80px;
     width: 30%;
     height: 40px;
-    background: #533d79;
+    background: #e4a7b4;
     border-radius: 50% 0% 0% 50%;
     display: block;
     position: absolute;
     bottom: 50px;
     right: 0px;
     content: '';
-    box-shadow: 0px -10px 10px #533d79, 10px 0px 10px #533d79, 0px 10px 10px #533d79;
+    box-shadow: -10px -10px 10px #e4a7b4, 10px -10px 10px #e4a7b4, 10px 0px 10px #e4a7b4, 0px 10px 10px #e4a7b4, 0px 10px 10px #e4a7b4;
 }
 #right-cloud::after{
-    min-width: 140px;
+    min-width: 100px;
     width: 45%;
-    height: 50px;
-    background: #533d79;
+    height: 80px;
+    background: #e4a7b4;
     border-radius: 50% 0% 0% 50%;
     display: block;
     position: absolute;
-    bottom: -20px;
+    bottom: -80px;
     right: 0px;
     content: '';
-    box-shadow: 0px -10px 10px #533d79, 10px 0px 10px #533d79, 0px 10px 10px #533d79;
+    box-shadow: -10px -10px 10px #e4a7b4, 10px 0px 10px #e4a7b4, 0px 10px 10px #e4a7b4, 0px 10px 10px #e4a7b4;
 }
 #display-box span, #display-descriptors{
     display: inline;
@@ -167,11 +165,10 @@ span{
     position: relative;
 }
 .color2-section{
-    background-image: linear-gradient(#c8758a, #e14264);
+    background-image: linear-gradient(#c8758a 70%, #e14264);
     height: fit-content;
     margin-top: -1px;
     padding: 10px 30px 50px 30px;
-    display: none;
 }
 ul{
     width: fit-content;
@@ -185,7 +182,6 @@ ul{
     height: 50px;
     margin-top: -1px;
     position: relative;
-    display: none;
 }
 .glowing-curve{
     box-shadow: 0px -9px 10px #173058, 5px -10px 10px #0b53a7;
@@ -212,7 +208,6 @@ ul{
     background-image: linear-gradient(#173058, #0b53a7);
     height: fit-content;
     margin-top: -1px;
-    display: none;
 }
 footer{
     overflow-x: hidden;
