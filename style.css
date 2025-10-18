@@ -204,6 +204,11 @@ span{
     background-color: transparent !important;
     text-decoration: underline;
 }
+#display-box{
+    display: block;
+    margin: auto;
+    width: fit-content;
+}
 #display-box span, #display-descriptors{
     display: inline;
     background: none;
@@ -211,6 +216,7 @@ span{
     font-size: 20px;
     z-index: 1000;
     position: relative;
+    margin: auto;
 }
 .descriptor-change{
     display: inline-block; 
