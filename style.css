@@ -17,6 +17,20 @@ body{
     font-size: 16px;
     position: relative;
 }
+.mobile{
+    display: none !important;
+}
+.desktop{
+    display: block !important;
+}
+@media screen and (max-width: 650px) {
+    .mobile{
+        display: block !important;
+    }
+    .desktop{
+        display: none !important;
+    }
+}
 .hidden{
     display: none !important;
 }
@@ -197,7 +211,7 @@ span{
 #call-now a, #call-now span{
     color: white;
     text-shadow: 0px 0px 2px #7f021d, 0px 0px 2px #7f021d, 0px 0px 4px #9c1a36, 0px 0px 6px #9c1a36, 0px 0px 10px #a93e55, 0px 0px 20px #a93e55, 0px 0px 40px #cc4c68, 0px 0px 60px #cc4c68;
-    font-size: 28px;
+    font-size: 32px;
     margin: 20px auto;
     display: block;
     z-index: 1000;
@@ -267,6 +281,23 @@ span{
         text-shadow: 0px 0px 5px rgb(252, 179, 252);
     }
 }
+.darkshift{
+    animation: darkshift 10s infinite;
+}
+@keyframes darkshift {
+    0% {
+        text-shadow: 0px 0px 2px rgb(128, 1, 128), 0px 0px 4px rgb(128, 1, 128), 0px 0px 10px rgb(128, 1, 128), 0px 0px 20px rgb(128, 1, 128), 0px 0px 40px rgb(128, 1, 128);
+    }
+    25% {
+        text-shadow: 0px 0px 2px rgb(212, 2, 2), 0px 0px 4px rgb(212, 2, 2), 0px 0px 10px rgb(212, 2, 2), 0px 0px 20px rgb(212, 2, 2), 0px 0px 40px rgb(212, 2, 2);
+    }
+    50% {
+        text-shadow: 0px 0px 2px rgb(162, 65, 0), 0px 0px 4px rgb(162, 65, 0), 0px 0px 10px rgb(162, 65, 0), 0px 0px 20px rgb(162, 65, 0), 0px 0px 40px rgb(162, 65, 0);
+    }
+    75% {
+        text-shadow: 0px 0px 2px rgb(212, 2, 2), 0px 0px 4px rgb(212, 2, 2), 0px 0px 10px rgb(212, 2, 2), 0px 0px 20px rgb(212, 2, 2), 0px 0px 40px rgb(212, 2, 2);
+    }
+}
 .color2-section{
     background-image: linear-gradient(#c8758a 70%, #e14264);
     height: fit-content;
@@ -334,11 +365,17 @@ ul{
     margin-bottom: 20px;
     background: transparent;
     box-shadow: none;
-    list-style-image: url(./img/raindrop.svg);
+    list-style: circle;
+}
+.review-box{
+    display: none;
+}
+.selected-review{
+    display: block !important;
 }
 footer{
     overflow-x: hidden;
-    border: solid purple 2px;
+    background-color: #0b53a7;
 }
 #footer-img img{
     width: 100%;
