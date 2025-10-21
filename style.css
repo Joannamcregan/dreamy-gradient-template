@@ -59,6 +59,12 @@ body{
         opacity: 1;
     }
 }
+#scroll-top{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 5000;
+}
 header{
     background-image: linear-gradient(#000000, #0f1d37);
     color: white;
