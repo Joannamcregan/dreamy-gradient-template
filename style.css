@@ -37,10 +37,10 @@ body{
 .centered-text{
     text-align: center;
 }
-.fade-closed{
+.fadeOut{
     animation: fade-out 1s forwards;
 }
-.fade-open{
+.fadeIn{
     animation: fade-in 1s forwards;
 }
 @keyframes fade-out {
@@ -378,6 +378,10 @@ ul{
 }
 .selected-review{
     display: block !important;
+}
+#review-buttons{
+    width: fit-content;
+    margin: 20px auto 40px auto;
 }
 footer{
     overflow-x: hidden;
