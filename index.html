@@ -71,7 +71,7 @@
         </div>
         <div class="color3-section">
             <h2>Hear from Our Clients</h2>
-            <div id="reviews">
+            <div id="reviews" tabindex="0">
                 <div class="review-box selected-review" data-review="0">
                     <h3>Job Well Done</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac mi libero. Maecenas volutpat tempor turpis, eu commodo massa mattis vitae. Phasellus pellentesque aliquet metus, ut pretium purus mattis a. Etiam consequat nisi non dui fermentum, a tempus dui fringilla. Aliquam vel tellus dolor. Morbi in purus ut nibh pretium aliquet. Etiam facilisis magna id sapien bibendum, vitae condimentum odio luctus. Pellentesque tellus tellus, lobortis sed ligula vel, dignissim gravida augue.</p>
@@ -123,6 +123,12 @@
             </div>
         </section>
         <section>
+            <div id="contact-overlay" class="hidden">
+                <h2>Call 555-555-5555</h2>
+                <p>Your call will be answered or returned by a knowledgeable member of our team.</p>
+            </div>
+        </section>
+        <section>
             <div id="cookie-banner">
                 <div class="cookie-text-section">
                     <h3>This site actually doesn't use cookies.</h3>
@@ -149,7 +155,7 @@
         <img src="img/hills_and_mountains_300.svg" alt="a simple illustration of dark hills with mountains in the distance" class="width-xs" />
     </div>
     <div id="footer-nav-section">
-        <nav>
+        <nav aria-label="footer navigation">
             <a href="#about-section" class="desktop-link">About</a>
             <a href="#services-section" class="desktop-link">Services</a>
             <a href="#contact-section" class="desktop-link">Contact</a>
