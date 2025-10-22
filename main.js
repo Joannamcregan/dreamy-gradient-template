@@ -6,11 +6,22 @@ const topArrow = document.getElementById('scroll-top');
 const leftArrow = document.getElementById('reviews--left-arrow');
 const rightArrow = document.getElementById('reviews--right-arrow');
 const reviews = document.getElementsByClassName('review-box');
+const cookieOverlay = document.getElementById('cookie-banner');
+const allowCookies = document.getElementById('allow-cookies');
+const disallowCookies = document.getElementById('disallow-cookies');
 
 window.onload = handleScroll();
 leftArrow.addEventListener('click', scrollReviewsLeft);
 rightArrow.addEventListener('click', scrollReviewsRight);
-
+privacyPolicyLink.addEventListener("click", () => {
+    privacyPolicy.classList.remove('hidden');
+    privacyPolicy.classList.add('fadeIn');
+    privacyPolicy.classList.add('block');
+    topArrow.classList.add('hidden');
+    setTimeout(()=>{
+        privacyPolicy.classList.remove('fadeIn');
+    }, 1000);
+})
 closePrivacyPolicy.addEventListener("click", () => {
     privacyPolicy.classList.remove('block');
     privacyPolicy.classList.add('fadeOut');
@@ -19,6 +30,14 @@ closePrivacyPolicy.addEventListener("click", () => {
         privacyPolicy.classList.remove('fadeOut');
     }, 1000);
 })
+allowCookies.addEventListener("click", closeCookieOverlay);
+disallowCookies.addEventListener("click", closeCookieOverlay);
+function closeCookieOverlay(){
+    cookieOverlay.classList.add('fadeOut');
+    setTimeout(()=>{
+        cookieOverlay.classList.add('hidden');
+    }, 1000)
+}
 const elementInView = (el, dividend = 1) => {
     const elementTop = el.getBoundingClientRect().top;
     return (
