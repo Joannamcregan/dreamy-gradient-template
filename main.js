@@ -13,10 +13,10 @@ rightArrow.addEventListener('click', scrollReviewsRight);
 
 closePrivacyPolicy.addEventListener("click", () => {
     privacyPolicy.classList.remove('block');
-    privacyPolicy.classList.add('fade-closed');
+    privacyPolicy.classList.add('fadeOut');
     setTimeout(()=>{
         privacyPolicy.classList.add('hidden');
-        privacyPolicy.classList.remove('fade-closed');
+        privacyPolicy.classList.remove('fadeOut');
     }, 1000);
 })
 const elementInView = (el, dividend = 1) => {
@@ -50,12 +50,12 @@ function scrollReviewsRight() {
     leftArrow.classList.add('hidden');
     rightArrow.classList.add('hidden');
     currentSelected.classList.add('fadeOut');
+    newSelected.classList.add('fadeIn');
     setTimeout(()=>{        
-        newSelected.classList.add('fadeIn');
+        newSelected.classList.remove('hidden');
     }, 10);
     setTimeout(()=>{
         currentSelected.classList.add('hidden');
-        newSelected.classList.remove('hidden');
         currentSelected.classList.remove('fadeOut');
         newSelected.classList.remove('fadeIn');
         currentSelected.classList.remove('selected-review');
@@ -72,20 +72,20 @@ function scrollReviewsLeft() {
     const newSelected = document.querySelector('[data-review="' + (currentIndex - 1) + '"]');
     leftArrow.classList.add('hidden');
     rightArrow.classList.add('hidden');
+    currentSelected.classList.add('fadeOut');
+    newSelected.classList.add('fadeIn');
     setTimeout(()=>{        
-        currentSelected.classList.add('fadeOut');
-        newSelected.classList.add('fadeIn');
+        newSelected.classList.remove('hidden');
     }, 10);
     setTimeout(()=>{
         currentSelected.classList.add('hidden');
-        newSelected.classList.remove('hidden');
         currentSelected.classList.remove('fadeOut');
         newSelected.classList.remove('fadeIn');
         currentSelected.classList.remove('selected-review');
         newSelected.classList.add('selected-review');
         if (parseInt(currentIndex) > 1){
-        leftArrow.classList.remove('hidden');
-    }
+            leftArrow.classList.remove('hidden');
+        }
     rightArrow.classList.remove('hidden');
     }, 2200);
 }

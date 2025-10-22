@@ -42,6 +42,7 @@ body{
 }
 .fadeIn{
     animation: fade-in 1s forwards;
+    opacity: 0;
 }
 @keyframes fade-out {
     0%{
@@ -104,17 +105,22 @@ header a{
     left: -100px;
 }
 .shooting-star--active{
-    animation: cross-right 30s forwards 1s;
+    animation: cross-right 10s forwards 1s;
+    transform: rotate(10deg);
 }
 @keyframes cross-right {
     0%{
-        top: 80px;
+        top: 30px;
         left: -100px;
+        opacity: 1;
+    }
+    90%{
         opacity: 1;
     }
     100%{
         top: 80px;
-        left: 10000px;
+        left: 1900px;
+        opacity: 0;
     }
 }
 p, h1, h2, h3, h4{
@@ -347,7 +353,7 @@ ul{
 }
 .color3-section{
     background-image: linear-gradient(#173058, #0b53a7);
-    height: fit-content;
+    height: 500px;
     margin-top: -1px;
 }
 .box{
@@ -373,8 +379,22 @@ ul{
     box-shadow: none;
     list-style: circle;
 }
+#reviews{
+    position: relative;
+    max-width: 800px;
+    width: 90%;
+    height: 300px;
+    margin: 20px auto;
+    overflow-y: scroll;
+    background: #162e56;
+    border: solid #101d33 5px;
+    scrollbar-color: #101d33 #2f528a;
+    border-radius: 20px 0px 0px 20px;
+}
 .review-box{
-    display: none;
+    position: absolute;
+    top: 0;
+    padding: 20px;
 }
 .selected-review{
     display: block !important;
