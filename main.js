@@ -9,8 +9,25 @@ const reviews = document.getElementsByClassName('review-box');
 const cookieOverlay = document.getElementById('cookie-banner');
 const allowCookies = document.getElementById('allow-cookies');
 const disallowCookies = document.getElementById('disallow-cookies');
+const contactOverlay = document.getElementById('contact-overlay');
+const callNow = document.getElementById('callNowDesktop');
+const closeContactOverlay = document.getElementById('close-contact-overlay');
 
 window.onload = handleScroll();
+callNow.addEventListener('click', () => {
+    contactOverlay.classList.add('fadeIn');
+    contactOverlay.classList.remove('hidden');
+    setTimeout(()=>{
+        contactOverlay.classList.remove('fadeIn');
+    }, 1000);
+})
+closeContactOverlay.addEventListener('click', () => {
+    contactOverlay.classList.add('fadeOut');
+    setTimeout(()=>{
+        contactOverlay.classList.add('hidden');
+        contactOverlay.classList.remove('fadeOut');
+    }, 1000);
+})
 leftArrow.addEventListener('click', scrollReviewsLeft);
 rightArrow.addEventListener('click', scrollReviewsRight);
 privacyPolicyLink.addEventListener("click", () => {
